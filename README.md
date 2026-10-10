@@ -65,7 +65,7 @@ These follow Anthropic's prompting guidance for Opus 5.5 and its eval guidance:
 3. **Effort:** use `high` for M0 (architecture decisions are costly to change later) and for
    the audits. `medium` is Opus 5.5's default and fine for most milestone sessions; move up
    to `high` if quality slips. Set max output tokens high (up to 128k) for long turns.
-4. Fill in the `{{…}}` fields in `prompts/01_KICKOFF.md` and send it as the first message.
+4. Run `prompts/00_LOCAL_SETUP.md` first (workspace + tools). Then fill in the `{{…}}` fields in `prompts/01_KICKOFF.md` and send it as the first message.
 5. For each milestone, start a **fresh session** with `prompts/02_MILESTONE.md`. Read the
    milestone report before moving on. Check that what it calls "verified" has evidence.
 6. After M4 and after M8, run `prompts/03_AUDIT_AND_REVIEW.md` in a separate fresh session:
